@@ -50,47 +50,47 @@ const Homepage = () => {
  
          <Stack direction="column" bgcolor="white" width="100%">
          <UserBox margin={2} gap={1} >
-            <Avatar alt="Remy Sharp" id="profile_img" src={profile__img}
+            <Avatar alt="profile__img" id="profile__img" src={profile__img}
                 sx={{
                     height: "88px",
                     width: "88px"
                 }}
             />
             <Typography id="twitter" variant='h3' fontSize={20} mt={1.5}>
-            Annete Black
+            Sunday Joel
             </Typography>
-            <Typography id="twitter" variant='h3' fontSize={20} mt={1.5}
+            <Typography id="slack" variant='h3' fontSize={20} mt={1.5}
                 sx={{
                     display: "none"
                 }}
             >
-            Annete Black
+            Uniquejoel
             </Typography>
           </UserBox>
           
           <ContainerBox  margin={2} gap={1} >
-          <StyledButton>twitter link</StyledButton>
+          <StyledButton id='twitter_link' href='https://twitter.com/joelsunday_'>twitter link</StyledButton>
 
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-          <StyledButton>  Zuri Team</StyledButton>     
+          <StyledButton id='btn__zuri' href='https://training.zuri.team/'>  Zuri Team</StyledButton>     
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-          <StyledButton>  Zuri Books</StyledButton>   
+          <StyledButton id='books' href='http://books.zuri.team'> Zuri Books</StyledButton>   
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-          <StyledButton>python Books</StyledButton>   
+          <StyledButton id='book__python' href='https://books.zuri.team/python-for-beginners?ref_id=<Uniquejoel>' >python Books</StyledButton>   
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-          <StyledButton> Background Check For Coders </StyledButton>   
+          <StyledButton id='pitch' href='https://background.zuri.team'> Background Check For Coders </StyledButton>   
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1} >
-          <StyledButton>Design Books </StyledButton>   
+          <StyledButton id='book__design' href='https://books.zuri.team/design-rules'>Design Books </StyledButton>   
           </ContainerBox>
 
           <SocialBox  gap={1} >
@@ -107,8 +107,8 @@ const Homepage = () => {
                 flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"},
                 marginTop: "30px",
                 justifyContent: {xs: "", sm: "", md: "space-between", lg: "space-between", xl: "space-between"},
-               
-                gap: "6px",
+                padding: "48px 0px",
+                gap: "10px",
 
             }}
           >
