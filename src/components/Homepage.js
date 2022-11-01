@@ -6,6 +6,7 @@ import Icon from '../images/Icon.png';
 import profile__img from '../images/profile__img.png';
 import ZuriInternship from '../images/ZuriInternship.png';
 import I4G from '../images/I4G.png';
+import Footertext from '../images/Footertext.png';
 import React from 'react'
 
 const UserBox = styled(Box)({
@@ -16,7 +17,7 @@ const UserBox = styled(Box)({
   })
 
 const ContainerBox = styled(Box)({
-    width: "1152px",
+    width: "100%",
     height: "76px",
     backgroundColor: "#EAECF0",
     border: "1px solid #EAECF0",
@@ -47,7 +48,7 @@ const StyledButton = styled(Button)({
 const Homepage = () => {
   return (
  
-         <Stack direction="column" bgcolor="white">
+         <Stack direction="column" bgcolor="white" width="100%">
          <UserBox margin={2} gap={1} >
             <Avatar alt="Remy Sharp" id="profile_img" src={profile__img}
                 sx={{
@@ -55,7 +56,14 @@ const Homepage = () => {
                     width: "88px"
                 }}
             />
-            <Typography id="twitter" variant='span' fontSize={20} mt={1.5}>
+            <Typography id="twitter" variant='h3' fontSize={20} mt={1.5}>
+            Annete Black
+            </Typography>
+            <Typography id="twitter" variant='h3' fontSize={20} mt={1.5}
+                sx={{
+                    display: "none"
+                }}
+            >
             Annete Black
             </Typography>
           </UserBox>
@@ -93,18 +101,22 @@ const Homepage = () => {
             
           </SocialBox>
 
-          <Stack direction="row" bgcolor="white" 
+          <Stack 
             sx={{
                 display: "flex",
+                flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"},
                 marginTop: "30px",
-                justifyContent: "space-between",
+                justifyContent: {xs: "", sm: "", md: "space-between", lg: "space-between", xl: "space-between"},
+               
+                gap: "6px",
+
             }}
           >
             <Box>
                <img src={ZuriInternship} />
             </Box>
             <Box>
-                height
+               <img src={Footertext} />
             </Box>
             <Box>
                <img src={I4G} />

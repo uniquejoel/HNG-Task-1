@@ -1,8 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   display: flex;
   margin: auto;
-  text-align: center;
+
  justify-content: center;
+ width: 80%;
 }
 
 .App-logo {
