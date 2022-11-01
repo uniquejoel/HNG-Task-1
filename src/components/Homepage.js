@@ -20,6 +20,7 @@ const ContainerBox = styled(Box)({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
+    color: "#000000"
    
 }) 
 
@@ -30,6 +31,13 @@ const SocialBox = styled(Box)({
     textAlign: "center",
     justifyContent: "center"
   })
+
+const StyledButton = styled(Button)({
+    height: "100%",
+    width: "100%",
+   color: "#000000",
+    fontSize: "18px"
+})
 
 const Homepage = () => {
   return (
@@ -43,38 +51,28 @@ const Homepage = () => {
           </UserBox>
           
           <ContainerBox  margin={2} gap={1} >
-          <Button variant="text" color='secondary'>Twitter Link</Button>
+          <StyledButton>twitter link</StyledButton>
 
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-            <Typography variant='h1' fontSize={20}>
-            Zuri Team
-            </Typography>
+          <StyledButton>  Zuri Team</StyledButton>     
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-            <Typography variant='h1' fontSize={20}>
-            Zuri Books
-            </Typography>
+          <StyledButton>  Zuri Books</StyledButton>   
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-            <Typography variant='h1' fontSize={20}>
-            Python Books
-            </Typography>
+          <StyledButton>python Books</StyledButton>   >
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-            <Typography variant='h1' fontSize={20}>
-            Background Check For Coders
-            </Typography>
+          <StyledButton> Background Check For Coders </StyledButton>   
           </ContainerBox>
 
-          <ContainerBox margin={2} gap={1}  >
-            <Typography variant='h1' fontSize={20}>
-            Design Books
-            </Typography>
+          <ContainerBox margin={2} gap={1} >
+          <StyledButton>Design Books </StyledButton>   
           </ContainerBox>
 
           <SocialBox margin={2} gap={1} >
