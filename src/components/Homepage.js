@@ -1,6 +1,11 @@
-import { Avatar, Box, Stack, Typography, Button } from '@mui/material';
+import { Avatar, Box, Stack, Typography, Button, IconButton } from '@mui/material';
 import { styled } from '@mui/system';
-import { GitHub } from '@mui/icons-material'
+
+import slack from '../images/slack.png';
+import Icon from '../images/Icon.png';
+import profile__img from '../images/profile__img.png';
+import ZuriInternship from '../images/ZuriInternship.png';
+import I4G from '../images/I4G.png';
 import React from 'react'
 
 const UserBox = styled(Box)({
@@ -44,7 +49,12 @@ const Homepage = () => {
  
          <Stack direction="column" bgcolor="white">
          <UserBox margin={2} gap={1} >
-            <Avatar alt="Remy Sharp" id="profile_img" src="https://images.pexels.com/photos/11293719/pexels-photo-11293719.jpeg?auto=compress&cs=tinysrgb&w=600" />
+            <Avatar alt="Remy Sharp" id="profile_img" src={profile__img}
+                sx={{
+                    height: "88px",
+                    width: "88px"
+                }}
+            />
             <Typography id="twitter" variant='span' fontSize={20} mt={1.5}>
             Annete Black
             </Typography>
@@ -64,7 +74,7 @@ const Homepage = () => {
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
-          <StyledButton>python Books</StyledButton>   >
+          <StyledButton>python Books</StyledButton>   
           </ContainerBox>
 
           <ContainerBox margin={2} gap={1}  >
@@ -75,11 +85,31 @@ const Homepage = () => {
           <StyledButton>Design Books </StyledButton>   
           </ContainerBox>
 
-          <SocialBox margin={2} gap={1} >
-            <GitHub />
-            <Avatar alt="Remy Sharp" id="profile_img" src="https://images.pexels.com/photos/11293719/pexels-photo-11293719.jpeg?auto=compress&cs=tinysrgb&w=600" />
+          <SocialBox  gap={1} >
+           
+           <Button><Avatar alt="Remy Sharp" id="profile_img" src={slack} /></Button> 
+           <Button><Avatar alt="Remy Sharp" id="profile_img" src={Icon} /></Button>  
+         
             
           </SocialBox>
+
+          <Stack direction="row" bgcolor="white" 
+            sx={{
+                display: "flex",
+                marginTop: "30px",
+                justifyContent: "space-between",
+            }}
+          >
+            <Box>
+               <img src={ZuriInternship} />
+            </Box>
+            <Box>
+                height
+            </Box>
+            <Box>
+               <img src={I4G} />
+            </Box>
+          </Stack>
 
         </Stack>
    
