@@ -1,4 +1,4 @@
-import { Avatar, Box, Stack, Typography, Button, IconButton } from '@mui/material';
+import { Avatar, Box, Stack, Typography, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
 import slack from '../images/slack.png';
@@ -113,13 +113,13 @@ const Homepage = () => {
             }}
           >
             <Box>
-               <img src={ZuriInternship} />
+               <img src={ZuriInternship} alt="ZuriInternship" />
             </Box>
             <Box>
-               <img src={Footertext} />
+               <img src={Footertext} alt="Footertext" />
             </Box>
             <Box>
-               <img src={I4G} />
+               <img src={I4G} alt="I4G" />
             </Box>
           </Stack>
 
