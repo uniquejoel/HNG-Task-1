@@ -26,7 +26,8 @@ const ContainerBox = styled(Box)({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    color: "#000000"
+    color: "#000000",
+    marginLeft: "-4.8px"
    
 }) 
 
@@ -49,7 +50,7 @@ const Homepage = () => {
   return (
  
          <Stack direction="column" bgcolor="white" width="100%">
-         <UserBox margin={2} gap={1} >
+         <UserBox mt={2} gap={1} >
             <Avatar alt="profile__img" id="profile__img" src={profile__img}
                 sx={{
                     height: "88px",
