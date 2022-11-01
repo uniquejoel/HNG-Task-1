@@ -1,4 +1,6 @@
-import { Avatar, Box, Stack, Typography, Button } from '@mui/material';
+import { Avatar, Box, Stack, Typography, Button, IconButton } from '@mui/material';
+
+
 import { styled } from '@mui/system';
 
 import slack from '../images/slack.png';
@@ -7,6 +9,8 @@ import profile__img from '../images/profile__img.png';
 import ZuriInternship from '../images/ZuriInternship.png';
 import I4G from '../images/I4G.png';
 import Footertext from '../images/Footertext.png';
+import grid from '../images/grid.png';
+import share from '../images/share.png';
 import React from 'react'
 
 const UserBox = styled(Box)({
@@ -48,8 +52,30 @@ const StyledButton = styled(Button)({
 
 const Homepage = () => {
   return (
- 
-         <Stack direction="column" bgcolor="white" width="100%">
+    <Box width="100%">
+     <Box
+        sx={{
+            display: "flex",
+            justifyContent: "flex-end"
+        }}
+     >
+        <IconButton 
+            sx={{
+                display: {xs: "none", sm: "none", md: "block", lg: "block", xl: "block"}
+            }}
+        >
+        <img src={share} alt="share" />
+        </IconButton>
+
+         <IconButton 
+         sx={{
+             display: {md: "none", lg: "none", xl: "none"},
+         }}
+         >
+         <img src={grid} alt="grid"  />
+         </IconButton>
+    </Box>
+         <Stack direction="column" bgcolor="white" >
          <UserBox mt={2} gap={1} >
             <Avatar alt="profile__img" id="profile__img" src={profile__img}
                 sx={{
@@ -125,7 +151,7 @@ const Homepage = () => {
           </Stack>
 
         </Stack>
-   
+ </Box>
   )
 }
 
