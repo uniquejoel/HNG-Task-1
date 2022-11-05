@@ -86,7 +86,16 @@ const Homepage = () => {
                     width: "88px"
                 }}
             />
-            <Typography id="twitter" variant='h3' fontSize={20} mt={1.5}>
+            <Typography id="twitter" variant='h3' fontSize={20} mt={1.5}
+               sx={{
+                fontFamily: 'Inter',
+                fontStyle: 'normal',
+                fontWeight: '700',
+                fontSize: '20px',
+                lineHeight: '30px',
+                color: '#101828'
+            }}
+            >
             Sunday Joel
             </Typography>
             <Typography id="slack" variant='h3' fontSize={20} mt={1.5}
@@ -99,7 +108,7 @@ const Homepage = () => {
           </UserBox>
           
           <ContainerBox  margin={2} gap={1} >
-          <StyledButton id='twitter_link' href='https://twitter.com/joelsunday_'>Twitter L ink</StyledButton>
+          <StyledButton id='twitter_link' href='https://twitter.com/joelsunday_'>Twitter Link</StyledButton>
 
           </ContainerBox>
 
