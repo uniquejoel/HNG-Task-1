@@ -5,8 +5,8 @@ import { Box, Stack } from '@mui/system'
 import React from 'react'
 
 const StyledBox = styled(Box) ({  
-    border: "2px solid black",
-    padding: "30px"
+    paddingTop: "30px",
+    paddingBottom: "30px"
 })
 
 const StyledTextfield = styled(TextField) ({
