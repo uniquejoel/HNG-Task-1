@@ -70,7 +70,7 @@ const Contact = () => {
         <StyledTextfield
             sx={{
                 width: {xs: '100%', sm: '100%', md: '348px', lg: '348px', xl: '348px'},
-                marginRight: '35px'
+                marginRight: '15px'
             }}
           id="first_name"
           placeholder="Hello World"
