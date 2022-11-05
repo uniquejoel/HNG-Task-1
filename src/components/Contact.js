@@ -1,4 +1,6 @@
-
+import ZuriInternship from '../images/ZuriInternship.png';
+import I4G from '../images/I4G.png';
+import Footertext from '../images/Footertext.png';
 import styled from '@emotion/styled'
 import { Button, Checkbox, FormControlLabel, TextField, Typography } from '@mui/material'
 import { Box, Stack } from '@mui/system'
@@ -70,7 +72,7 @@ const Contact = () => {
                 width: {xs: '100%', sm: '100%', md: '348px', lg: '348px', xl: '348px'},
                 marginRight: '35px'
             }}
-          id="outlined-error"
+          id="first_name"
           placeholder="Hello World"
         //   helperText="Incorrect entry."
         />
@@ -92,7 +94,7 @@ const Contact = () => {
          sx={{
             width: {xs: '100%', sm: '100%', md: '348px', lg: '348px', xl: '348px'}
         }}
-         id="outlined-error"
+         id="last_name"
          placeholder="Hello World"
         //  helperText="Incorrect entry."
        />
@@ -119,7 +121,7 @@ const Contact = () => {
             marginBottom: '20px',
            
         }}
-         id="outlined-error"
+         id="email"
          placeholder="youremail@gmail.com"
         //  helperText="Incorrect entry."
        />
@@ -145,7 +147,7 @@ const Contact = () => {
            
         }}
         rows={3}
-        id="standard-multiline-static"
+        id="message"
           multiline
          placeholder="Send me a message and I'll reply you as soon as possible..."
         //  helperText="Incorrect entry."
@@ -165,7 +167,7 @@ const Contact = () => {
        control={<Checkbox />} 
        label="You agree to providing your data to {name} who may contact you." />
 
-       <Button
+       <Button id='btn__submit'
               sx={{
                 width: "100%",
                 background: '#1570EF',
@@ -176,6 +178,27 @@ const Contact = () => {
                 "&:hover": { backgroundColor: "#1570EF"}
             }}
        >Send Message</Button>
+
+<Stack 
+            sx={{
+                display: "flex",
+                flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"},
+                marginTop: "30px",
+                justifyContent: {xs: "", sm: "", md: "space-between", lg: "space-between", xl: "space-between"},
+                padding: "48px 0px",
+
+            }}
+          >
+            <Box>
+               <img src={ZuriInternship} alt="ZuriInternship" />
+            </Box>
+            <Box>
+               <img src={Footertext} alt="Footertext" />
+            </Box>
+            <Box>
+               <img src={I4G} alt="I4G" />
+            </Box>
+          </Stack>
     
   
 
