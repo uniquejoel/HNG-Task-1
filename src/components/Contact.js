@@ -1,6 +1,6 @@
 
 import styled from '@emotion/styled'
-import { TextField, Typography } from '@mui/material'
+import { Button, Checkbox, FormControlLabel, TextField, Typography } from '@mui/material'
 import { Box, Stack } from '@mui/system'
 import React from 'react'
 
@@ -141,7 +141,7 @@ const Contact = () => {
         <TextField
          sx={{
             width: "100%",
-            marginBottom: '35px',
+            marginBottom: '15px',
            
         }}
         rows={3}
@@ -151,6 +151,30 @@ const Contact = () => {
         //  helperText="Incorrect entry."
        />
        </Box>
+
+       <FormControlLabel 
+        sx={{
+            fontFamily: 'Inter',
+            fontStyle: 'normal',
+            fontWeight: '400',
+            fontSize: '16px',
+            lineHeight: '24px',
+            marginBottom: '15px',
+            color: '#475467'
+        }}
+       control={<Checkbox />} 
+       label="You agree to providing your data to {name} who may contact you." />
+
+       <Button
+              sx={{
+                width: "100%",
+                background: '#1570EF',
+                boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)',
+                borderRadius: '8px',
+                color: '#ffffff',
+                "&:hover": { backgroundColor: "#1570EF"}
+            }}
+       >Post</Button>
     
   
 
