@@ -11,6 +11,7 @@ import I4G from '../images/I4G.png';
 import Footertext from '../images/Footertext.png';
 import grid from '../images/grid.png';
 import share from '../images/share.png';
+import { useNavigate } from 'react-router-dom';
 import React from 'react'
 
 const UserBox = styled(Box)({
@@ -47,10 +48,12 @@ const StyledButton = styled(Button)({
     height: "100%",
     width: "100%",
    color: "#000000",
-    fontSize: "18px"
+    fontSize: "18px",
+    textTransform: "none"
 })
 
 const Homepage = () => {
+  const navigate = useNavigate()
   return (
     <Box width="100%">
      <Box
@@ -96,7 +99,7 @@ const Homepage = () => {
           </UserBox>
           
           <ContainerBox  margin={2} gap={1} >
-          <StyledButton id='twitter_link' href='https://twitter.com/joelsunday_'>twitter link</StyledButton>
+          <StyledButton id='twitter_link' href='https://twitter.com/joelsunday_'>Twitter L ink</StyledButton>
 
           </ContainerBox>
 
@@ -118,6 +121,13 @@ const Homepage = () => {
 
           <ContainerBox margin={2} gap={1} >
           <StyledButton id='book__design' href='https://books.zuri.team/design-rules'>Design Books </StyledButton>   
+          </ContainerBox>
+
+          <ContainerBox margin={2} gap={1} >
+          <StyledButton id='contact' onClick={() => {
+            navigate('/contact');
+          }}>
+            Contact</StyledButton>   
           </ContainerBox>
 
           <SocialBox  gap={1} >
