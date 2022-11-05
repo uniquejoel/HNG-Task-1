@@ -4,13 +4,13 @@ import { TextField, Typography } from '@mui/material'
 import { Box, Stack } from '@mui/system'
 import React from 'react'
 
-const StyledBox = styled(Box) ({
-    margin: "20px",
-    padding: "20px"
+const StyledBox = styled(Box) ({  
+    border: "2px solid black",
+    padding: "30px"
 })
 
 const StyledTextfield = styled(TextField) ({
-    marginBottom: '40px',
+    marginBottom: '25px',
     height: '44px'
 })
 
@@ -72,7 +72,7 @@ const Contact = () => {
             }}
           id="outlined-error"
           placeholder="Hello World"
-          helperText="Incorrect entry."
+        //   helperText="Incorrect entry."
         />
         </Box>
 
@@ -94,7 +94,7 @@ const Contact = () => {
         }}
          id="outlined-error"
          placeholder="Hello World"
-         helperText="Incorrect entry."
+        //  helperText="Incorrect entry."
        />
        </Box>
       
@@ -116,15 +116,41 @@ const Contact = () => {
         <TextField
          sx={{
             width: "100%",
-            marginBottom: '35px',
+            marginBottom: '20px',
            
         }}
          id="outlined-error"
          placeholder="youremail@gmail.com"
-         helperText="Incorrect entry."
+        //  helperText="Incorrect entry."
        />
        </Box>
-  
+
+
+       <Box>
+        <Typography 
+            sx={{
+                fontFamily: 'Inter',
+                fontStyle: "normal",
+                fontWeight: "500",
+                fontSize: "14px",
+                lineHeight:" 20px",
+                color: "#344054"
+            }}
+        >
+            Message</Typography>
+        <TextField
+         sx={{
+            width: "100%",
+            marginBottom: '35px',
+           
+        }}
+        rows={3}
+        id="standard-multiline-static"
+          multiline
+         placeholder="Send me a message and I'll reply you as soon as possible..."
+        //  helperText="Incorrect entry."
+       />
+       </Box>
     
   
 
