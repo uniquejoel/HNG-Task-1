@@ -122,7 +122,8 @@ const Contact = () => {
            
         }}
          id="email"
-         placeholder="youremail@gmail.com"
+        //  error
+          placeholder="youremail@gmail.com"
         //  helperText="Incorrect entry."
        />
        </Box>
@@ -185,8 +186,8 @@ const Contact = () => {
                 flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"},
                 marginTop: "30px",
                 justifyContent: {xs: "", sm: "", md: "space-between", lg: "space-between", xl: "space-between"},
-                padding: "48px 0px",
-
+                padding: "30px 0px",
+                gap: "10px",
             }}
           >
             <Box>
