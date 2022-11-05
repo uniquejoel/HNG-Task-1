@@ -172,9 +172,10 @@ const Contact = () => {
                 boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)',
                 borderRadius: '8px',
                 color: '#ffffff',
+                textTransform: "none",
                 "&:hover": { backgroundColor: "#1570EF"}
             }}
-       >Post</Button>
+       >Send Message</Button>
     
   
 
